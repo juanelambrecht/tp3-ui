@@ -1,24 +1,88 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <div class="goods_list">
+        <ul>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+          <li>
+            <img src="img / hua.jpg" alt="flor" width="200px" height="200px" />
+            <p class="top_name"> Flor rosa - Reina de las flores (rosa) </p>
+            <p>
+              {" "}
+              <span> ￥ 200.0 </span> <a> Añadir al carrito </a>{" "}
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="shopingCar">
+        <div class="kuangk">
+          <a> Añadir al carrito </a>
+        </div>
+        <div class="lieb"></div>
+      </div>
+    </body>
   );
 }
 

@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+.goods_list ul{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.goods_list ul li{
+  float: left;
+  width: 240px;
+  list-style: none;
+  
+}
+.goods_list ul li img{
+  margin-left: 20px;
+}
+.goods_list ul li p{
+  text-align: center;
+}
+.goods_list ul li p a{
+  display: inline-block;
+  width:80px;
+  height:30px;
+  background:red;
+  color:#fff;
+  line-height:30px;
+  font-size:12px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor:pointer;
+}
+
+.shopingCar{
+  width: 350px;
+  height:100%;
+  position: fixed;
+  top: 0;
+  right:-310px;
+  background: green;
+}
+.kuangk{
+  width: 40px;
+  height: 100%;
+  background:#000;
+  position:relative;
+  float:left;
+}
+.kuangk a{
+  color: #FFFFFF;
+  font-size: 12px;
+  width:12px;
+  position:absolute;
+  display:block;
+  background: red;
+  top:50%;
+  left:0;
+  padding:10px 14px;
+  margin-top:-42px;
+  cursor:pointer;
+}

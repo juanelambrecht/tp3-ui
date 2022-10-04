@@ -1,18 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ItemsTable from "./itemsTable";
+import ShoppingCart from "./shoppingCart";
 import ShoppingList from "./shoppingList";
 import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import Productos from "./productos";
-import Promociones from "./promociones";
-import Tarjetas from "./tarjetas";
 import "./card.css";
 
 var DEFAULT_CATEGORY = { key: "default", name: "Cualquier categoría" };
 
 var ITEMS = [
   //un ejemplo cargado a mano de la venta
-  //deprecated
   {
     key: 0,
     name: "Cerco eléctrico",
@@ -92,7 +88,7 @@ function fetchItems(keywords, category) {
   return filteredItems;
 }
 
-class App extends React.Component {
+class Productos extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -244,7 +240,7 @@ class App extends React.Component {
             </tbody>
           </Table>
  */}
-          {/* <div class="item carousel-item active">
+          <div class="item carousel-item active">
             <div class="row">
               <div class="col">
                 <h2>
@@ -289,54 +285,7 @@ class App extends React.Component {
                 </div>
               </div>
             </div>
-          </div>*/}
-
-          <BrowserRouter>
-            <div
-              style={{
-                display: "flex",
-                background: "#1c1c1c8c",
-                padding: "5px 0 5px 5px",
-                fontSize: "20px",
-              }}
-            >
-              <div style={{ margin: "10px" }}>
-                <NavLink
-                  to="/productos"
-                  style={({ isActive }) => ({
-                    color: isActive ? "#3a3f78" : "white",
-                  })}
-                >
-                  Productos
-                </NavLink>
-              </div>
-              <div style={{ margin: "10px" }}>
-                <NavLink
-                  to="/tarjetas"
-                  style={({ isActive }) => ({
-                    color: isActive ? "#3a3f78" : "white",
-                  })}
-                >
-                  Tarjetas
-                </NavLink>
-              </div>
-              <div style={{ margin: "10px" }}>
-                <NavLink
-                  to="/promociones"
-                  style={({ isActive }) => ({
-                    color: isActive ? "#3a3f78" : "white",
-                  })}
-                >
-                  Descuentos
-                </NavLink>
-              </div>
-            </div>
-            <Routes>
-              <Route exact path="/productos" element={<Productos />} />
-              <Route exact path="/promociones" element={<Promociones />} />
-              <Route exact path="/tarjetas" element={<Tarjetas />} />
-            </Routes>
-          </BrowserRouter>
+          </div>
         </div>
       );
     } else {
@@ -354,4 +303,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default Productos;
